@@ -6,35 +6,41 @@ export default function Header(){
     return(
         <>
             <div className="topbar">
-                <Link to="/">
+                <Link to="/best-pc-games">
                     <img src={"image.jpeg"} height={"60px"} />
                 </Link>
             </div>
 
             <div className="navbar">
                 <Link 
-                    to="/Free" 
-                    className={location.pathname === "/Free" ? "active" : ""}
+                    to="/best-pc-games/Free" 
+                    className={location.pathname === "/best-pc-games/Free" ? "active" : ""}
                 >
                     Free
                 </Link>
                 <Link 
-                    to="/Singleplayer" 
-                    className={location.pathname === "/Singleplayer" ? "active" : ""}
+                    to="/best-pc-games/Singleplayer" 
+                    className={location.pathname === "/best-pc-games/Singleplayer" ? "active" : ""}
                 >
                     Singleplayer
                 </Link>
                 <Link 
-                    to="/Multiplayer" 
-                    className={location.pathname === "/Multiplayer" ? "active" : ""}
+                    to="/best-pc-games/Multiplayer" 
+                    className={location.pathname === "/best-pc-games/Multiplayer" ? "active" : ""}
                 >
                     Multiplayer
                 </Link>
                 <Link 
-                    to="/Racing" 
-                    className={location.pathname === "/Racing" ? "active" : ""}
+                    to="/best-pc-games/Racing" 
+                    className={location.pathname === "/best-pc-games/Racing" ? "active" : ""}
                 >
                     Racing
+                </Link>
+                <Link 
+                    to="/best-pc-games/Sale" 
+                    className={location.pathname === "/best-pc-games/Sale" ? "active" : ""}
+                >
+                    Sale
                 </Link>
             </div>
         </>

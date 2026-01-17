@@ -55,7 +55,7 @@ const games = [
     price: "₹ 999",
     rating: "5/5",
     tag:"",
-    genre:["singleplayer","racing"]
+    genre:["singleplayer","racing","sale"]
 
   },
   {
@@ -65,7 +65,7 @@ const games = [
     price: "₹ 709",
     rating: "5/5",
     tag: "",
-    genre:["singleplayer"]
+    genre:["singleplayer","sale"]
 
   },
   {
@@ -75,7 +75,7 @@ const games = [
     price: "₹ 999",
     rating: "4/5",
     tag: "18+",
-    genre:["singleplayer"]
+    genre:["singleplayer","sale"]
 
   },
   {
@@ -95,7 +95,7 @@ const games = [
     price: "₹ 1,799",
     rating: "4/5",
     tag: "18+",
-    genre:["singleplayer"]
+    genre:["singleplayer","sale"]
   },
   {
     id: 11,
@@ -104,7 +104,7 @@ const games = [
     price: "₹ 2,999",
     rating: "3/5",
     tag: "",
-    genre:["singleplayer"]
+    genre:["singleplayer","sale"]
   },
   {
     id: 12,
@@ -122,7 +122,7 @@ const games = [
     price: "₹ 349",
     rating: "4.5/5",
     tag: "",
-    genre:["singleplayer"]
+    genre:["singleplayer","sale"]
   },
   {
     id: 14,
@@ -261,10 +261,10 @@ const games = [
 //   },
 ];
 
-function getGameById(id) {
-  const numericId = typeof id === "string" ? parseInt(id, 10) : id;
-  return games.find((g) => g.id === numericId);
-}
+// function getGameById(id) {
+//   const numericId = typeof id === "string" ? parseInt(id, 10) : id;
+//   return games.find((g) => g.id === numericId);
+// }
 
-export { getGameById };
+// export { getGameById };
 export default games;
